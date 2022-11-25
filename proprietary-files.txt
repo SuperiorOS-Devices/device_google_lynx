@@ -69,3 +69,5 @@ system_ext/priv-app/OemRilService/OemRilService.apk;PRESIGNED
 
 # Permissions
 product/etc/permissions/android.hardware.biometrics.face.xml
+product/etc/sysconfig/adaptivecharging.xml
+product/etc/sysconfig/quick_tap.xml
