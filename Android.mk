@@ -29,7 +29,7 @@ ifneq (,$(filter $(TARGET_DEVICE),lynx))
   include $(call all-makefiles-under,$(LOCAL_PATH))
 
 HBM_LIBS := libhbmsvmanager_jni.so
-HBM_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT)/priv-app/HbmSVManager/lib/arm64/,$(notdir $(IMS_LIBS)))
+HBM_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT)/priv-app/HbmSVManager/lib/arm64/,$(notdir $(HBM_LIBS)))
 $(HBM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "HBM lib link: $@"
 	@mkdir -p $(dir $@)
