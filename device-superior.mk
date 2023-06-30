@@ -1,4 +1,4 @@
-DEVICE_PACKAGE_OVERLAYS += device/google/lynx/overlay-calyx
+DEVICE_PACKAGE_OVERLAYS += device/google/lynx/overlay-superior
 
 # EUICC
 PRODUCT_COPY_FILES += \

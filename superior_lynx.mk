@@ -1,13 +1,27 @@
 # Inherit some common stuff.
-$(call inherit-product, vendor/calyx/config/common_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/google/gs201/calyx_common.mk)
-$(call inherit-product, device/google/lynx/device-calyx.mk)
+$(call inherit-product, device/google/gs201/superior_common.mk)
+$(call inherit-product, device/google/lynx/device-superior.mk)
 $(call inherit-product, device/google/lynx/aosp_lynx.mk)
 
+
+# Disable/Enable Blur Support, default is false
+TARGET_ENABLE_BLUR := true
+
+
+# UDFPS Animations
+SUPERIOR_UDFPS_ANIMATIONS := true
+
+# GAPPS
+BUILD_WITH_GAPPS := true
+
+# Superior Extra Stuffs
+TARGET_BOOT_ANIMATION_RES := 1080
+
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := calyx_lynx
+PRODUCT_NAME := superior_lynx
 PRODUCT_MODEL := Pixel 7a
 PRODUCT_BRAND := google
 
