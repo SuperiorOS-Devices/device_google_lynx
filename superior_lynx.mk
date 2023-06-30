@@ -10,6 +10,8 @@ $(call inherit-product, device/google/lynx/aosp_lynx.mk)
 # Disable/Enable Blur Support, default is false
 TARGET_ENABLE_BLUR := true
 
+# Superior OS Official
+SUPERIOR_OFFICIAL := true
 
 # UDFPS Animations
 SUPERIOR_UDFPS_ANIMATIONS := true
